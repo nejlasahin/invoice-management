@@ -34,7 +34,7 @@ $ java -jar target/*.jar
 
 ## Postman Collections
 
-You can access the postman collection [here.](https://github.com/nejlasahin/invoice-management/blob/master/docs/Invoice%20Management.postman_collection.json).
+You can access the postman collection [here.](https://github.com/nejlasahin/invoice-management/blob/master/docs/Invoice%20Management.postman_collection.json)
 
 ## Curl Commands
 
