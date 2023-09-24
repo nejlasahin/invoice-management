@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "7aac8bc0-6af5-4577-8fbe-b94cf084eae3",
+		"name": "Invoice Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[USER] login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"johndoe@invoice.com\",\n  \"password\": \"456789\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PRODUCT] create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGludm9pY2UuY29tIiwiaWF0IjoxNjk1NTkxOTExLCJleHAiOjE2OTU1OTI1MTV9.UCUexb8NPr2-ZN3EM5u9jZeANobpnoNgWG2Ne1fBoi03UG6Z6hXWhIrPFkTr6gY3tWNOSsEhvjT9rR6ITS0LXw"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productName\": \"TR007\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PRODUCT] all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGludm9pY2UuY29tIiwiaWF0IjoxNjk1NTkxOTExLCJleHAiOjE2OTU1OTI1MTV9.UCUexb8NPr2-ZN3EM5u9jZeANobpnoNgWG2Ne1fBoi03UG6Z6hXWhIrPFkTr6gY3tWNOSsEhvjT9rR6ITS0LXw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[BILL] create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGludm9pY2UuY29tIiwiaWF0IjoxNjk1NTkxOTExLCJleHAiOjE2OTU1OTI1MTV9.UCUexb8NPr2-ZN3EM5u9jZeANobpnoNgWG2Ne1fBoi03UG6Z6hXWhIrPFkTr6gY3tWNOSsEhvjT9rR6ITS0LXw"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productId\": 2,\n  \"billAmount\": 10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bills/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bills",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[BILL] all approved",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGludm9pY2UuY29tIiwiaWF0IjoxNjk1NTkxOTExLCJleHAiOjE2OTU1OTI1MTV9.UCUexb8NPr2-ZN3EM5u9jZeANobpnoNgWG2Ne1fBoi03UG6Z6hXWhIrPFkTr6gY3tWNOSsEhvjT9rR6ITS0LXw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bills/all/APPROVED",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bills",
+						"all",
+						"APPROVED"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[BILL] all not approved",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGludm9pY2UuY29tIiwiaWF0IjoxNjk1NTkxOTExLCJleHAiOjE2OTU1OTI1MTV9.UCUexb8NPr2-ZN3EM5u9jZeANobpnoNgWG2Ne1fBoi03UG6Z6hXWhIrPFkTr6gY3tWNOSsEhvjT9rR6ITS0LXw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bills/all/NOT_APPROVED",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bills",
+						"all",
+						"NOT_APPROVED"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
