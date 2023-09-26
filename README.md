@@ -18,7 +18,7 @@
 
 git clone https://github.com/nejlasahin/invoice-management.git
 
-$ cd spring-shortened-url
+$ cd invoice-management
 $ mvn clean install
 $ java -jar target/*.jar
 
