@@ -16,7 +16,7 @@
 
 ```ssh
 
-git clone https://github.com/nejlasahin/spring-shortened-url.git
+git clone https://github.com/nejlasahin/invoice-management.git
 
 $ cd spring-shortened-url
 $ mvn clean install
